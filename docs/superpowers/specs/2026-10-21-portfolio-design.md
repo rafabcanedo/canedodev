@@ -29,8 +29,8 @@ src/
       about-me/
       how-i-work/
       my-experience/
-    ui/                       → shadcn components
-    ui-shared/                → SectionTitle, Card, Badge (reusable shared)
+    ui/                       → shadcn components only (do not add custom components here)
+    ui-shared/                → custom reusable primitives: SectionTitle, Card, Badge
   data/
     intro.ts
     about.ts
@@ -42,15 +42,17 @@ src/
 
 ### page.tsx shape
 
+`layout.tsx` already holds `<Navbar />` and `<Footer />` wrapping `{children}`. Fix needed: they are currently placed outside `<body>` — move them inside during implementation.
+
+`page.tsx` renders only the sections:
+
 ```tsx
-<Navbar />
 <main>
   <Intro />
   <AboutMe />
   <HowIWork />
   <MyExperience />
 </main>
-<Footer />
 ```
 
 ### Tech decisions
