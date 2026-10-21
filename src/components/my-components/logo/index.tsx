@@ -1,7 +1,18 @@
-export function Logo() {
-    return (
-        <div>
-            <h2>Canedo Dev</h2>
-        </div>
-    )
+import { cn } from "@/lib/utils"
+
+interface LogoProps {
+  className?: string
+}
+
+export function Logo({ className }: LogoProps) {
+  return (
+    <span
+      className={cn(
+        "font-poppins font-semibold text-xl text-foreground tracking-tight",
+        className
+      )}
+    >
+      Canedo Dev
+    </span>
+  )
 }

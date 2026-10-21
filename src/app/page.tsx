@@ -1,8 +1,15 @@
+import { Intro } from "@/components/sections/intro"
+import { AboutMe } from "@/components/sections/about-me"
+import { HowIWork } from "@/components/sections/how-i-work"
+import { MyExperience } from "@/components/sections/my-experience"
 
 export default function Home() {
   return (
-    <div>
-      <h1>Portfolio Canedo</h1>
-    </div>
-  );
+    <main>
+      <Intro />
+      <AboutMe />
+      <HowIWork />
+      <MyExperience />
+    </main>
+  )
 }
