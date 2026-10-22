@@ -1,5 +1,6 @@
 import type { StaticImageData } from "next/image"
 import type { ReactNode } from "react"
+import type { LucideIcon } from "lucide-react"
 
 export type ExperienceLogo =
   | { kind: "image"; src: StaticImageData }
@@ -15,6 +16,7 @@ export interface Experience {
 
 export interface StackTopic {
   topic: string
+  icon: LucideIcon
   items: string[]
 }
 
