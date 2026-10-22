@@ -36,3 +36,13 @@ export interface LayoutProps<T extends string> {
   children: ReactNode
   params?: Promise<{ [key: string]: string }>
 }
+
+export interface ArticleFrontmatter {
+  title: string
+  date: string
+  description: string
+}
+
+export interface ArticleMeta extends ArticleFrontmatter {
+  slug: string
+}
