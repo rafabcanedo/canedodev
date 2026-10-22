@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { stack } from "@/data/stack"
 import { Title } from "@/components/my-components/title"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
 
 const MotionCard = motion.create(Card)
 
@@ -21,19 +22,18 @@ export function HowIWork() {
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: i * 0.08 }}
           >
-            <CardHeader>
+            <CardHeader className="border-b">
+              <item.icon size={24} className="text-muted-foreground mb-1" />
               <CardTitle className="font-poppins font-semibold text-sm text-foreground">
                 {item.topic}
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <ul className="flex flex-col gap-2">
+              <div className="flex flex-wrap gap-2">
                 {item.items.map((tool) => (
-                  <li key={tool} className="text-sm text-muted-foreground">
-                    {tool}
-                  </li>
+                  <Badge key={tool} variant="secondary">{tool}</Badge>
                 ))}
-              </ul>
+              </div>
             </CardContent>
           </MotionCard>
         ))}
