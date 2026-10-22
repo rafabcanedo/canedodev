@@ -538,7 +538,7 @@ export function AboutMe() {
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <SectionTitle>About Me</SectionTitle>
+        <Title>About Me</Title>
         <div className="flex flex-col gap-4">
           {aboutParagraphs.map((p, i) => (
             <p key={i} className="text-base text-muted-foreground leading-relaxed">

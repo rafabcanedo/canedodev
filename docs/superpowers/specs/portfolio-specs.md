@@ -30,7 +30,7 @@ src/
       how-i-work/
       my-experience/
     ui/                       → shadcn components only (do not add custom components here)
-    ui-shared/                → custom reusable primitives: SectionTitle, Card, Badge
+    ui-shared/                → custom reusable primitives: Title, Card, Badge
   data/
     intro.ts
     about.ts
@@ -109,7 +109,7 @@ src/
 **Left:** `about-me.png` — fixed size, slightly rounded corners.
 
 **Right:**
-- `SectionTitle`: `"About Me"`
+- `Title`: `"About Me"`
 - Body text (two paragraphs):
 
 > "I live in Brazil and love traveling to other countries to network, discover new cultures, and gain perspectives you can only find by stepping outside your comfort zone. I believe those experiences deeply shape how we see the world, and ultimately how we build products and create meaningful experiences.
@@ -122,7 +122,7 @@ src/
 
 ## Section 3 — How I Work
 
-**Layout:** `SectionTitle` centered, then a responsive card grid.
+**Layout:** `Title` centered, then a responsive card grid.
 
 **Grid:** 3 columns desktop / 2 columns tablet / 1 column mobile.
 

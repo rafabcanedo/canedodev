@@ -4,7 +4,7 @@ import Image from "next/image"
 import { motion } from "framer-motion"
 import aboutMeImage from "@/assets/about-me.png"
 import { aboutParagraphs } from "@/data/about"
-import { SectionTitle } from "@/components/ui-shared"
+import { Title } from "@/components/my-components/title"
 
 export function AboutMe() {
   return (
@@ -32,7 +32,7 @@ export function AboutMe() {
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <SectionTitle>About Me</SectionTitle>
+        <Title>About Me</Title>
         <div className="flex flex-col gap-4">
           {aboutParagraphs.map((p, i) => (
             <p key={i} className="text-base text-muted-foreground leading-relaxed">

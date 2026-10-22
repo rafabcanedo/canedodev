@@ -25,6 +25,11 @@ export interface IntroHighlight {
   period: string
 }
 
+export interface TitleProps {
+  children: React.ReactNode
+  className?: string
+}
+
 export interface LayoutProps<T extends string> {
   children: ReactNode
   params?: Promise<{ [key: string]: string }>

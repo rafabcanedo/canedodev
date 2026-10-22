@@ -1,11 +1,7 @@
 import { cn } from "@/lib/utils"
+import { TitleProps } from "@/types"
 
-interface SectionTitleProps {
-  children: React.ReactNode
-  className?: string
-}
-
-export function SectionTitle({ children, className }: SectionTitleProps) {
+export function Title({ children, className }: TitleProps) {
   return (
     <h2
       className={cn(

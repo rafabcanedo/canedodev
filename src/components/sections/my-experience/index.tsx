@@ -4,7 +4,7 @@ import { useRef } from "react"
 import Image from "next/image"
 import { motion, useScroll, useSpring } from "framer-motion"
 import { experiences } from "@/data/experience"
-import { SectionTitle } from "@/components/ui-shared"
+import { Title } from "@/components/my-components/title"
 import type { Experience } from "@/types"
 
 function ExperienceEntry({ exp }: { exp: Experience }) {
@@ -26,7 +26,7 @@ function ExperienceEntry({ exp }: { exp: Experience }) {
             className="object-contain object-right"
           />
         ) : (
-          <span className="text-2xl">{exp.logo.value}</span>
+          <span className="text-[28px] leading-none">{exp.logo.value}</span>
         )}
         <span className="font-medium text-sm text-foreground">{exp.company}</span>
         <span className="text-xs text-muted-foreground">{exp.period}</span>
@@ -55,13 +55,13 @@ export function MyExperience() {
   const sectionRef = useRef<HTMLDivElement>(null)
   const { scrollYProgress } = useScroll({
     target: sectionRef,
-    offset: ["start 80%", "end 20%"],
+    offset: ["start 80%", "end 90%"],
   })
   const scaleY = useSpring(scrollYProgress, { stiffness: 200, damping: 40 })
 
   return (
     <section className="max-w-5xl mx-auto px-6 py-24">
-      <SectionTitle className="mb-4">My Experience</SectionTitle>
+      <Title className="mb-4">My Experience</Title>
 
       <div ref={sectionRef} className="relative mt-8">
         <div className="absolute left-[14rem] top-0 bottom-0 w-px bg-border overflow-hidden">
