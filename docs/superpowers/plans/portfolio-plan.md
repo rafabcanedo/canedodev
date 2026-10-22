@@ -18,7 +18,7 @@
 - `src/data/about.ts` — about me paragraphs
 - `src/data/stack.ts` — how I work topics + items
 - `src/data/experience.ts` — experience entries with logos
-- `src/components/ui-shared/section-title.tsx` — reusable SectionTitle
+- `src/components/ui-shared/section-title.tsx` — reusable Title
 - `src/components/ui-shared/index.ts` — barrel export
 - `src/components/sections/intro/index.tsx` — Intro section
 - `src/components/sections/about-me/index.tsx` — About Me section
@@ -345,25 +345,25 @@ export function Footer() {
 
 ---
 
-### Task 8: Create SectionTitle shared component
+### Task 8: Create Title shared component
 
 **Files:**
 - Create: `src/components/ui-shared/section-title.tsx`
 - Create: `src/components/ui-shared/index.ts`
 
-- [ ] **Step 1: Create SectionTitle**
+- [ ] **Step 1: Create Title**
 
 `src/components/ui-shared/section-title.tsx`:
 
 ```tsx
 import { cn } from "@/lib/utils"
 
-interface SectionTitleProps {
+interface TitleProps {
   children: React.ReactNode
   className?: string
 }
 
-export function SectionTitle({ children, className }: SectionTitleProps) {
+export function Title({ children, className }: TitleProps) {
   return (
     <h2
       className={cn(
@@ -382,7 +382,7 @@ export function SectionTitle({ children, className }: SectionTitleProps) {
 `src/components/ui-shared/index.ts`:
 
 ```ts
-export { SectionTitle } from "./section-title"
+export { Title } from "./section-title"
 ```
 
 ---
@@ -510,7 +510,7 @@ import Image from "next/image"
 import { motion } from "framer-motion"
 import aboutMeImage from "@/assets/about-me.png"
 import { aboutParagraphs } from "@/data/about"
-import { SectionTitle } from "@/components/ui-shared"
+import { Title } from "@/components/ui-shared"
 
 export function AboutMe() {
   return (
@@ -586,12 +586,12 @@ Scroll to About Me. Image on the left, "About Me" title + two paragraphs on the 
 
 import { motion } from "framer-motion"
 import { stack } from "@/data/stack"
-import { SectionTitle } from "@/components/ui-shared"
+import { Title } from "@/components/ui-shared"
 
 export function HowIWork() {
   return (
     <section className="max-w-5xl mx-auto px-6 py-24">
-      <SectionTitle className="mb-12">How I Work</SectionTitle>
+      <Title className="mb-12">How I Work</Title>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {stack.map((item, i) => (
@@ -665,7 +665,7 @@ import { useRef } from "react"
 import Image from "next/image"
 import { motion, useScroll, useSpring } from "framer-motion"
 import { experiences } from "@/data/experience"
-import { SectionTitle } from "@/components/ui-shared"
+import { Title } from "@/components/ui-shared"
 import type { Experience } from "@/types"
 
 function ExperienceEntry({ exp }: { exp: Experience }) {
@@ -722,7 +722,7 @@ export function MyExperience() {
 
   return (
     <section className="max-w-5xl mx-auto px-6 py-24">
-      <SectionTitle className="mb-4">My Experience</SectionTitle>
+      <Title className="mb-4">My Experience</Title>
 
       <div ref={sectionRef} className="relative mt-8">
         <div className="absolute left-[14rem] top-0 bottom-0 w-px bg-border overflow-hidden">

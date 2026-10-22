@@ -2,12 +2,12 @@
 
 import { motion } from "framer-motion"
 import { stack } from "@/data/stack"
-import { SectionTitle } from "@/components/ui-shared"
+import { Title } from "@/components/my-components/title"
 
 export function HowIWork() {
   return (
     <section className="max-w-5xl mx-auto px-6 py-24">
-      <SectionTitle className="mb-12">How I Work</SectionTitle>
+      <Title className="mb-12">How I Work</Title>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {stack.map((item, i) => (
