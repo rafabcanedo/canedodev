@@ -32,7 +32,7 @@ export interface TitleProps {
   className?: string
 }
 
-export interface LayoutProps<T extends string> {
+export interface LayoutProps {
   children: ReactNode
   params?: Promise<{ [key: string]: string }>
 }

@@ -19,7 +19,7 @@ export function MyExperience() {
       <Title className="mb-4">My Experience</Title>
 
       <div ref={sectionRef} className="relative mt-8">
-        <div className="absolute left-[14rem] top-0 bottom-0 w-px bg-border overflow-hidden">
+        <div className="absolute left-56 top-0 bottom-0 w-px bg-border overflow-hidden">
           <motion.div
             className="h-full w-full bg-foreground origin-top"
             style={{ scaleY }}
