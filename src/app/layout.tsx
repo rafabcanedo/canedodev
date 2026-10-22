@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description: "A portfolio developed by Canedo dev",
 }
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({ children }: LayoutProps) {
   return (
     <html
       lang="en"
