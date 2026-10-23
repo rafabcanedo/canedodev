@@ -6,6 +6,10 @@ export type ExperienceLogo =
   | { kind: "image"; src: StaticImageData }
   | { kind: "emoji"; value: string }
 
+export interface LogoProps {
+  className?: string
+}
+
 export interface Experience {
   company: string
   logo: ExperienceLogo

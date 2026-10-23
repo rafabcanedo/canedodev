@@ -7,7 +7,7 @@ export default async function BlogPage() {
 
   return (
     <>
-      <Title className="mb-12">Blog</Title>
+      <Title className="mb-12">My personal Blog</Title>
 
       <ul className="flex flex-col gap-8">
         {articles.map((article) => (

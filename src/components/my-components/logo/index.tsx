@@ -1,8 +1,6 @@
 import { cn } from "@/lib/utils"
-
-interface LogoProps {
-  className?: string
-}
+import { LogoProps } from "@/types"
+import Link from "next/link"
 
 export function Logo({ className }: LogoProps) {
   return (
@@ -12,7 +10,9 @@ export function Logo({ className }: LogoProps) {
         className
       )}
     >
-      Canedo Dev
+      <Link href="/">
+        Canedo Dev
+      </Link>
     </span>
   )
 }
