@@ -1,10 +1,13 @@
 "use client"
 
 import Image from "next/image"
+import Link from "next/link"
 import { motion } from "framer-motion"
 import aboutMeImage from "@/assets/about-me.png"
 import { aboutParagraphs } from "@/data/about"
 import { Title } from "@/components/my-components/title"
+import { buttonVariants } from "@/components/ui/button"
+import { cn } from "@/lib/utils"
 
 export function AboutMe() {
   return (
@@ -39,6 +42,12 @@ export function AboutMe() {
               {p}
             </p>
           ))}
+        </div>
+
+        <div>
+          <Link href="/about" className={cn(buttonVariants({ variant: "outline" }), "w-36 h-10")}>
+            More about me
+          </Link>
         </div>
       </motion.div>
     </section>

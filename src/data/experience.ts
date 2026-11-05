@@ -10,7 +10,7 @@ export const experiences: Experience[] = [
     role: "Software Developer",
     period: "2024 – 2026",
     bullets: [
-      "Built and maintained fullstack features across two logistics platforms using TypeScript, React, Java Spring Boot, and Golang — from adapting UIs to restructuring backend API responses.",
+      "Built and maintained fullstack features across two logistics platforms using TypeScript, React, Java Spring Boot, and Golang from adapting UIs to restructuring backend API responses.",
       "Contributed to a major platform unification initiative, building key operational screens from scratch aligned with UX designs to support multiple logistics workflows.",
       "Handled deployments and feature flags via Fury, monitored performance in Datadog, and worked on backend optimizations including caching and API restructuring.",
     ],
@@ -21,9 +21,9 @@ export const experiences: Experience[] = [
     role: "Founder & Software Developer",
     period: "2024 – 2025",
     bullets: [
-      "Architected and delivered responsive web applications and landing pages for content creators, independent professionals, and digital marketing teams — focused on performance, accessibility, and conversion.",
+      "Architected and delivered responsive web applications and landing pages for content creators, independent professionals, and digital marketing teams focused on performance, accessibility, and conversion.",
       "Implemented lightweight REST APIs and third-party integrations (contact forms, email services, data handling) to support end-to-end digital solutions.",
-      "Managed full project lifecycle — from scoping and client communication to cross-browser testing, domain configuration, and production deployment, aligned with marketing and conversion goals.",
+      "Managed full project lifecycle from scoping and client communication to cross-browser testing, domain configuration, and production deployment, aligned with marketing and conversion goals.",
     ],
   },
   {
