@@ -50,3 +50,9 @@ export interface ArticleFrontmatter {
 export interface ArticleMeta extends ArticleFrontmatter {
   slug: string
 }
+
+export interface AboutDetail {
+  icon: LucideIcon
+  label: string
+  value: string
+}
