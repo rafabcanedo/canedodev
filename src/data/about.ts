@@ -8,11 +8,11 @@ export const aboutDetails: AboutDetail[] = [
 ]
 
 export const aboutGoals: string[] = [
-  "text",
-  "text",
-  "text",
-  "text",
-  "text",
+  "Unification of a microservices system to support a new version of our app",
+  "Adaptation of new data in our system, saving the company over $140k monthly",
+  "Development of a fully innovative fullstack project, eliminating the need for users to rely on Excel",
+  "Creation of a new Golang initiative to replace legacy and separate projects",
+  "Website development for 20+ clients, helping them grow their digital presence",
 ]
 
 export const aboutParagraphs: string[] = [

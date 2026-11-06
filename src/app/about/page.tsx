@@ -22,7 +22,7 @@ export default function About() {
           <Title>My goals</Title>
           <ul className="flex flex-col gap-2">
             {aboutGoals.map((goal, index) => (
-              <li key={index} className="text-sm text-muted-foreground">— {goal}</li>
+              <li key={index} className="text-sm text-muted-foreground">• {goal}</li>
             ))}
           </ul>
         </div>
