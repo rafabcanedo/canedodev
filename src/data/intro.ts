@@ -7,6 +7,9 @@ export const introHeadline =
 export const introTagline =
   "Focus in building fullstack web application and coding my world"
 
+export const introGithubUrl = "https://github.com/rafabcanedo"
+export const introLinkedinUrl = "https://www.linkedin.com/in/rafael-canedo-4abaa8197/"
+
 export const introHighlights: IntroHighlight[] = [
   {
     color: "yellow",

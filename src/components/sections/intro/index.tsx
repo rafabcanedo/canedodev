@@ -2,6 +2,7 @@
 
 import Image from "next/image"
 import { motion } from "framer-motion"
+import { GithubLogoIcon, LinkedinLogoIcon } from "@phosphor-icons/react"
 import avatar from "@/assets/avatar.png"
 import {
   introAvailability,
@@ -9,6 +10,8 @@ import {
   introHeadline,
   introHighlights,
   introTagline,
+  introGithubUrl,
+  introLinkedinUrl,
 } from "@/data/intro"
 
 const dotColorMap = {
@@ -55,7 +58,31 @@ export function Intro() {
           ))}
         </div>
 
-        <p className="text-sm text-muted-foreground">{introTagline}</p>
+        <div className="flex flex-col gap-3">
+          <p className="text-sm text-muted-foreground">{introTagline}</p>
+          <div className="flex gap-4">
+            <motion.a
+              href={introGithubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.1 }}
+              className="flex items-center gap-1.5 text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <GithubLogoIcon size={22} weight="regular" />
+              <span className="text-sm">Github</span>
+            </motion.a>
+            <motion.a
+              href={introLinkedinUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.1 }}
+              className="flex items-center gap-1.5 text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <LinkedinLogoIcon size={22} weight="regular" />
+              <span className="text-sm">Linkedin</span>
+            </motion.a>
+          </div>
+        </div>
       </motion.div>
 
       <motion.div
