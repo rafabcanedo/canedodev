@@ -11,9 +11,9 @@ import { cn } from "@/lib/utils"
 
 export function AboutMe() {
   return (
-    <section className="max-w-5xl mx-auto px-6 py-24 flex items-center gap-16">
+    <section className="max-w-5xl mx-auto px-6 py-12 md:py-24 flex flex-col md:flex-row items-center gap-8 md:gap-16">
       <motion.div
-        className="shrink-0"
+        className="shrink-0 w-full flex justify-center md:block md:w-auto"
         initial={{ opacity: 0, x: -24 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
@@ -24,7 +24,7 @@ export function AboutMe() {
           alt="About Canedo Dev"
           width={340}
           height={340}
-          className="rounded-xl"
+          className="rounded-xl w-[260px] md:w-[340px]"
         />
       </motion.div>
 

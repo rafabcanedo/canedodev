@@ -5,13 +5,31 @@ import { motion } from "framer-motion"
 export function ExperienceInteractive({ exp }: { exp: Experience }) {
     return (
         <motion.div
-            className="flex gap-8 py-12"
+            className="flex flex-col md:flex-row gap-4 md:gap-8 py-8 md:py-12"
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.5 }}
         >
-            <div className="w-48 shrink-0 flex flex-col items-end gap-1 text-right pt-1">
+            <div className="flex items-center gap-3 md:hidden">
+                {exp.logo.kind === "image" ? (
+                    <Image
+                        src={exp.logo.src}
+                        alt={exp.company}
+                        height={20}
+                        width={60}
+                        className="object-contain"
+                    />
+                ) : (
+                    <span className="text-xl leading-none">{exp.logo.value}</span>
+                )}
+                <div className="flex flex-col">
+                    <span className="font-medium text-sm text-foreground">{exp.company}</span>
+                    <span className="text-xs text-muted-foreground">{exp.period}</span>
+                </div>
+            </div>
+
+            <div className="w-48 shrink-0 flex-col items-end gap-1 text-right pt-1 hidden md:flex">
                 {exp.logo.kind === "image" ? (
                     <Image
                         src={exp.logo.src}
@@ -27,7 +45,7 @@ export function ExperienceInteractive({ exp }: { exp: Experience }) {
                 <span className="text-xs text-muted-foreground">{exp.period}</span>
             </div>
 
-            <div className="relative shrink-0 w-0">
+            <div className="relative shrink-0 w-0 hidden md:block">
                 <div className="absolute top-1.5 w-3 h-3 rounded-full bg-foreground border-2 border-background -translate-x-1/2" />
             </div>
 

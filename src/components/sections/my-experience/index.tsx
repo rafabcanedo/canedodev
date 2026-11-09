@@ -15,11 +15,11 @@ export function MyExperience() {
   const scaleY = useSpring(scrollYProgress, { stiffness: 200, damping: 40 })
 
   return (
-    <section className="max-w-5xl mx-auto px-6 py-24">
+    <section className="max-w-5xl mx-auto px-6 py-12 md:py-24">
       <Title className="mb-4">My Experience</Title>
 
       <div ref={sectionRef} className="relative mt-8">
-        <div className="absolute left-56 top-0 bottom-0 w-px bg-border overflow-hidden">
+        <div className="absolute left-56 top-0 bottom-0 w-px bg-border overflow-hidden hidden md:block">
           <motion.div
             className="h-full w-full bg-foreground origin-top"
             style={{ scaleY }}

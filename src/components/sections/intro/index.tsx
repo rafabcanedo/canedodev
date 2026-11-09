@@ -18,9 +18,9 @@ const dotColorMap = {
 
 export function Intro() {
   return (
-    <section className="max-w-5xl mx-auto px-6 py-24 flex items-center gap-16">
+    <section className="max-w-5xl mx-auto px-6 py-12 md:py-24 flex flex-col md:flex-row items-center gap-8 md:gap-16">
       <motion.div
-        className="flex-1 flex flex-col gap-8"
+        className="flex-1 flex flex-col gap-8 w-full"
         initial={{ opacity: 0, y: 24 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
@@ -34,9 +34,10 @@ export function Intro() {
           <span className="font-poppins text-2xl font-medium text-foreground">
             {introGreeting}
           </span>
-          <h1 className="font-poppins text-4xl font-semibold text-foreground leading-tight">
+          <h1 className="font-poppins text-3xl md:text-4xl font-semibold text-foreground leading-tight">
             {introHeadline}
           </h1>
+
         </div>
 
         <div className="flex gap-10">
@@ -58,7 +59,7 @@ export function Intro() {
       </motion.div>
 
       <motion.div
-        className="shrink-0"
+        className="shrink-0 w-full flex justify-center md:block md:w-auto"
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, delay: 0.2 }}
@@ -68,7 +69,7 @@ export function Intro() {
           alt="Canedo Dev avatar"
           width={360}
           height={360}
-          className="rounded-2xl"
+          className="rounded-2xl w-[260px] md:w-[360px]"
           priority
         />
       </motion.div>

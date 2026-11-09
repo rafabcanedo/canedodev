@@ -1,7 +1,20 @@
 import { cn } from "@/lib/utils"
 import { TitleProps } from "@/types"
 
-export function Title({ children, className }: TitleProps) {
+export function Title({ children, className, size = "title" }: TitleProps) {
+  if (size === "subtitle") {
+    return (
+      <h3
+        className={cn(
+          "font-poppins text-sm font-semibold uppercase tracking-wide text-foreground",
+          className
+        )}
+      >
+        {children}
+      </h3>
+    )
+  }
+
   return (
     <h2
       className={cn(

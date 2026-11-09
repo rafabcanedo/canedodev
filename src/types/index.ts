@@ -34,6 +34,7 @@ export interface IntroHighlight {
 export interface TitleProps {
   children: React.ReactNode
   className?: string
+  size?: "title" | "subtitle"
 }
 
 export interface LayoutProps {

@@ -4,7 +4,7 @@ import { Construction } from "lucide-react"
 
 export function MyPersonalBlog() {
     return (
-        <section className="max-w-5xl mx-auto px-6 py-24">
+        <section className="max-w-5xl mx-auto px-6 py-12 md:py-24">
             <Title className="mb-4">My personal blog</Title>
 
             <div className="flex justify-center">

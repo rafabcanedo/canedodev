@@ -10,8 +10,8 @@ const MotionCard = motion.create(Card)
 
 export function HowIWork() {
   return (
-    <section className="max-w-5xl mx-auto px-6 py-24">
-      <Title className="mb-12">How I Work</Title>
+    <section className="max-w-5xl mx-auto px-6 py-12 md:py-24">
+      <Title className="mb-8 md:mb-12">How I Work</Title>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {stack.map((item, i) => (
