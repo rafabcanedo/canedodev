@@ -6,7 +6,7 @@ export function Title({ children, className, size = "title" }: TitleProps) {
     return (
       <h3
         className={cn(
-          "font-poppins text-sm font-semibold uppercase tracking-wide text-foreground",
+          "font-poppins text-xl font-semibold uppercase tracking-wide text-foreground",
           className
         )}
       >

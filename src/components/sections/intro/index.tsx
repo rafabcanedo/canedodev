@@ -69,7 +69,7 @@ export function Intro() {
           alt="Canedo Dev avatar"
           width={360}
           height={360}
-          className="rounded-2xl w-[260px] md:w-[360px]"
+          className="rounded-2xl w-65 md:w-90"
           priority
         />
       </motion.div>

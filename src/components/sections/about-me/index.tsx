@@ -24,7 +24,7 @@ export function AboutMe() {
           alt="About Canedo Dev"
           width={340}
           height={340}
-          className="rounded-xl w-[260px] md:w-[340px]"
+          className="rounded-xl w-65 md:w-85"
         />
       </motion.div>
 
