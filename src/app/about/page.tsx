@@ -1,12 +1,12 @@
 import { Title } from "@/components/my-components/title"
 import { ExperienceCard } from "@/components/my-components/experience-card"
-import { aboutParagraphs, aboutDetails, aboutGoals } from "@/data/about"
+import { aboutPageParagraphs, aboutDetails, aboutGoals } from "@/data/about"
 
 export default function About() {
   return (
     <div className="max-w-5xl mx-auto px-6 py-24 grid grid-cols-2 gap-16">
       <div className="flex flex-col gap-4">
-        {aboutParagraphs.map((paragraph, index) => (
+        {aboutPageParagraphs.map((paragraph, index) => (
           <p key={index} className="text-base text-muted-foreground leading-relaxed">{paragraph}</p>
         ))}
       </div>
